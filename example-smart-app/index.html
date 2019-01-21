@@ -66,17 +66,34 @@
         </tr>
       </table>
       
-      <select id="Ultra" onchange="run()">  <!--Call run() function-->
-            <option value="0">Select</option>
-            <option value="8">text1</option>
-            <option value="5">text2</option>
-            <option value="4">text3</option>
-       </select><br><br>
-       TextBox1<br>
-       <input type="text" id="srt" placeholder="get value on option select"><br>
-       TextBox2<br>
-      
+     
       <h2>Intake</h2>
+     
+<table>
+        <tr>
+          <td>
+            <select id="select1" onchange="getValue(this.value)">
+              <option value="$">--Select Reason for Consult --</option>
+              <option value="val1">Neurology</option>
+              <option value="val2">Phych</option>
+              <option value="val3">Other</option>
+        </select>
+        </td>
+         <td id="row-1"></td>
+        </tr>
+        <tr>
+         <td>
+           <select id="select2" onchange="getValue(this.value)">
+              <option value="$">--Consult Location --</option>
+              <option value="val1">ED</option>
+              <option value="val2">ICU</option>
+              <option value="val3">Other</option>
+        </select>
+        </td>
+         <td id="row-2"></td>
+        </tr>
+        </table>
+      
       <table>
        <tr>
           
